@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int reverse_num(int n) {
+int reverse_num(long n) {
 	int d, r=0;
 
 	for (int i = n; i > 0; i=i/10) {
@@ -11,12 +11,12 @@ int reverse_num(int n) {
 }
 
 int main() {
-	int mul;
+	long mul, flag=0;
 	for (int i = 100; i <= 999; i++) {
 		for (int j = 100; j <= 999; j++) {
 			mul = i*j;
 			if (mul == reverse_num(mul)) {
-				printf("%d x %d = %d\n", i, j, i*j);
+				printf("%ld x %ld = %ld\n", i, j, i*j);
 			}
 		}
 	}
