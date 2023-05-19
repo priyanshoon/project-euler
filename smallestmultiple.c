@@ -1,11 +1,20 @@
 #include<stdio.h>
 
+int isDivisible1to20(int n) {
+    for (int i = 1; i <= 20; i++) {
+        if (n % i != 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
 int main() {
-	int n=0, count=0;
-	while(count != 20) {
-		for (int i =1; i <= 20; i++) {
-			if ()
-		}
-	}
+    int n = 1;
+    while (isDivisible1to20) {
+        printf("%d is not visible\n", n);
+        n++;
+    }
+    printf("%d\n", n);
 	return 0;
 }
